@@ -1,6 +1,7 @@
 package model;
 
 public enum ComicGenre {
+    Art,
     Detectives,
     Fantasy,
     Horror,
