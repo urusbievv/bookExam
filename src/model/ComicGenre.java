@@ -6,5 +6,7 @@ public enum ComicGenre {
     Horror,
     ScienceFiction,
     Thrillers,
-    Romance;
+    Romance,
+    Action,
+    Manga;
 }
