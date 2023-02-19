@@ -1,47 +1,47 @@
 package model;
 
 public class Order {
-    private long id;
-    private long customerId; //кому продали
-    private long sellerId; // кто продавец
-    private long[] comics; // список книг которые мы продали
+    private int id;
+    private int customerId; //кому продали
+    private int sellerId; // кто продавец
+    private int[] comics; // список книг которые мы продали
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
+    public Order(int id, int customerId, int sellerId, int[] comics) {
         this.id = id;
-    }
-
-    public long getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(long customerId) {
         this.customerId = customerId;
-    }
-
-    public long getSellerId() {
-        return sellerId;
-    }
-
-    public void setSellerId(long sellerId) {
         this.sellerId = sellerId;
-    }
-
-    public long[] getComics() {
-        return comics;
-    }
-
-    public void setComics(long[] comics) {
         this.comics = comics;
     }
 
-    public Order(long id, long sellerId, long customerId, long[] comics) {
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
         this.id = id;
+    }
+
+    public int getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(int customerId) {
         this.customerId = customerId;
+    }
+
+    public int getSellerId() {
+        return sellerId;
+    }
+
+    public void setSellerId(int sellerId) {
         this.sellerId = sellerId;
+    }
+
+    public int[] getComics() {
+        return comics;
+    }
+
+    public void setComics(int[] comics) {
         this.comics = comics;
     }
 }

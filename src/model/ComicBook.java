@@ -6,13 +6,12 @@ public class ComicBook {
     private String author;
     private double price;
     private ComicGenre genre;
-
     private long pages;
-
     private String volume;
     private int  yearPublication;
+    private int instances;
 
-    public ComicBook(int id, String title, String author, double price, ComicGenre genre, long pages, String volume, int yearPublication) {
+    public ComicBook(int id, String title, String author, double price, ComicGenre genre, long pages, String volume, int yearPublication, int instances) {
         this.id = id;
         this.title = title;
         this.author = author;
@@ -21,9 +20,18 @@ public class ComicBook {
         this.pages = pages;
         this.volume = volume;
         this.yearPublication = yearPublication;
+        this.instances = instances;
     }
 
-    public int getId() {
+    public int getInstances() {
+        return instances;
+    }
+
+    public void setInstances(int instances) {
+        this.instances = instances;
+    }
+
+    public double getId() {
         return id;
     }
 
@@ -86,4 +94,6 @@ public class ComicBook {
     public void setVolume(String volume) {
         this.volume = volume;
     }
+
+
 }
