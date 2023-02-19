@@ -17,7 +17,6 @@ public class ApplicationImpl implements Application {
         this.dataComicBook = dataComicBook;
     }
 
-
     public ComicGenre getPopularGenre() {
         int countArt = 0;
         int countManga = 0;

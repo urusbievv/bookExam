@@ -12,4 +12,6 @@ public interface DataComicBook {
     List<Customer> customers();
     List<Seller> sellers();
     List<Order> orders();
+
+    List<Integer> availability();
 }

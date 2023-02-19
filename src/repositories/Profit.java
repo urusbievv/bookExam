@@ -1,7 +1,5 @@
 package repositories;
 
-import java.util.Objects;
-
 public class Profit {
 
     private int count; // кол-во проданного товара
@@ -32,18 +30,5 @@ public class Profit {
     public String toString() {
         return "all " + count +
                 " comics in the amount of " + price;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Profit profit = (Profit) o;
-        return count == profit.count && Double.compare(profit.price, price) == 0;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(count, price);
     }
 }
