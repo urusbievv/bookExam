@@ -17,6 +17,7 @@ public class ApplicationImpl implements Application {
         this.dataComicBook = dataComicBook;
     }
 
+
     public ComicGenre getPopularGenre() {
         int countArt = 0;
         int countManga = 0;
@@ -180,4 +181,15 @@ public class ApplicationImpl implements Application {
         }
         return current;
     }
+
+    public String getComicBookAll() {
+        StringBuilder price = null;
+        for (ComicBook comicBook : dataComicBook.books()) {
+            price = (price == null ? new StringBuilder("All Comics:\n") : price).append(comicBook.getTitle()).append("\n");
+        }
+
+        return price == null ? null : price.toString();
+
+    }
+
 }

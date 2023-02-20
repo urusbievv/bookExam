@@ -50,5 +50,8 @@ public class Adatapter {
         String strGenre = "Popular %s ";
         System.out.println(String.format(strGenre, application.getPopularGenre()));
 
+        //5
+        System.out.println();
+        System.out.println(application.getComicBookAll());
     }
 }

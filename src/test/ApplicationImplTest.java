@@ -1,18 +1,17 @@
 package test;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class ApplicationImplTest {
+public class ApplicationImplTest {
 
 
-    @BeforeEach
 
 
     @Test
-    void getProfitSeller(){
+    public void getProfitSeller(){
+
+
 
     }
 

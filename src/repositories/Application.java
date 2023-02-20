@@ -16,4 +16,6 @@ public interface Application {
 
     ComicBook getComicBookId(int id);
 
+    String getComicBookAll();
+
 }

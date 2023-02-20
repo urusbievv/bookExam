@@ -17,52 +17,6 @@ public class DataComicBookImpl implements DataComicBook {
         initData();
     }
 
-    public void addBooksInLibrary(ComicBook book) {
-
-        for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).getTitle().equals(book.getTitle()) &&
-                    books.get(i).getAuthor().equals(book.getAuthor())) {
-
-                availability.set(i, availability.get(i) + 1);
-                return;
-            }
-        }
-        message = "There was no such book in the library";
-    }
-    public void getBooksInLibrary(ComicBook book) {
-
-        for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).getTitle().equals(book.getTitle()) &&
-                    books.get(i).getAuthor().equals(book.getAuthor())) {
-                if (availability.get(i) <= 0) {
-                    message = "The book is out of stock";
-                    return;
-                }
-
-                availability.set(i, availability.get(i) - 1);
-                return;
-
-
-            }
-
-        }
-    }
-
-    private void init(){
-        Customer customer = new Customer(1, "Andrey Ivanov", 16);
-        ComicBook comicBook = new ComicBook(1, "The Warrior of Communism", "104", 700, ComicGenre.Art, 120, "", 2022, 0);
-        addBookInRepository(comicBook);
-
-
-
-    }
-
-
-    public void addBookInRepository(ComicBook book) {
-        books.add(book);
-        availability.add(book.getInstances());
-    }
-
     private void initData() {
 
 
